@@ -1,0 +1,43 @@
+<h2>Cadastre uma nova tarefa</h2>
+<form action="/novaTask" method="POST">
+        <div class="alignForm">
+            <section>
+                <label>Nome:</label>
+                <input type="text" name="nome">
+            </section>
+            <section class="prazo">
+                <label>Prazo:</label>
+                <input type="date" name="prazo">
+            </section>
+            <section class="select">
+            <label>Dificuldade:</label>
+                <select name="dificuldade">
+                    <option value="facil">Fácil</option>
+                    <option value="normal">Normal</option>
+                    <option value="difcil">Díficil</option>
+                </select>
+            </section>
+            <section class="sect_Btn">
+                <button type="submit">Cadastrar</button>
+            </section>
+        </div>
+</form>
+<h1>Suas Tarefas</h1>
+<article>
+     <button id="anterior">anterior</button>
+{{#each tarefas}}
+   <div class="card cardActive">
+       <h4>{{nome}}</h4>
+       <h4>{{prazo}}</h4>
+       <h4>{{dificuldade}}</h4>
+       <br>
+       <a href="/remove/{{_id}}"><button>deletar</button></a>
+   </div> 
+  
+{{else}}
+{{/each}}
+     <button id="proximo">proximo</button>
+</article>
+
+
+

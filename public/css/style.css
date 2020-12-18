@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    background-color: #eeeeee;
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+}
+h2{
+    margin-left: 8%;
+    margin-top: 4rem;
+    font-size: 1.7rem;
+}
+form{
+    width: 84%;
+    margin: 0 auto 5em auto;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1.3rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+.alignForm{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;    
+}
+section{
+    width: 23%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sect_Btn{
+    width: 28%;
+}
+.sect_Btn button{
+    background: #51F436;
+    border: 2px solid #49D732;
+    border-radius: 1.3rem;
+    color: white;
+    height: 2.5rem;
+    width: 11rem;
+    font-weight: 700;
+    font-size: 1.03rem;
+    -moz-box-sizing: content-box; /* or `border-box` */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-left: auto;
+    cursor: pointer;
+}
+label{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 1.04rem;
+    color: #bbb;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.7rem;
+}
+
+input, select, option{
+    width: 15rem;
+    height: 2.5rem;
+    border: 2px solid #5DA9EE;
+    border-radius: 0.8rem;
+    -moz-box-sizing: content-box; /* or `border-box` */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(68, 68, 68);
+}
+input{
+    padding-left: 1rem;
+}
+.prazo, select{
+    width: 12rem;
+}
+select{
+    cursor: pointer;
+}
+.prazo input{
+    text-align: center;
+}
+
+article{
+    width: 84%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hidden{
+    display: none;
+}
